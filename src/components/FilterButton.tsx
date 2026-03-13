@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 
-type Filter = 'All' | 'Active' | 'Completed';
+type Filter = 'all' | 'active' | 'completed';
 
 interface Props {
     current: Filter;
@@ -11,7 +11,7 @@ interface Props {
 export default function FilterButton({ current, setFilter }: Props) {
     return (
         <View style={styles.container}>
-            {['All', 'Active', 'Completed'].map((filter =>
+            {['all', 'active', 'completed'].map((filter =>
                 <TouchableOpacity
                 key={filter}
                 onPress={() => setFilter(filter as Filter)}

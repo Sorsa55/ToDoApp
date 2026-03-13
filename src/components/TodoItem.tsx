@@ -8,7 +8,7 @@ interface Props {
     onDelete: () => void;
 }
 
-export default function ToDoItem({ todo, onToggle, onDelete }: Props) {
+export default function TodoItem({ todo, onToggle, onDelete }: Props) {
     return (
         <View style={styles.container}>
             <TouchableOpacity onPress={onToggle}>
