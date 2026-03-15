@@ -33,12 +33,13 @@ const styles = StyleSheet.create({
     },
     text: {
         fontSize: 18,
+        color : '#d3d2d6',
     },
     completed: {
         textDecorationLine: 'line-through',
-        color: 'gray',
+        color: '#002e0e',
     },
     delete: {
-        color: 'red',
+        color: '#ff0303',
     },
 });

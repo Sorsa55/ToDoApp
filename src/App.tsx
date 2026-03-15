@@ -6,6 +6,7 @@ import { use, useEffect, useState } from 'react';
 import { ToDo } from './types/Todo';
 import { FlatList } from 'react-native';
 import TodoItem from './components/TodoItem';
+import Header from './components/header';
 
 type Filter = 'all' | 'active' | 'completed';
 
@@ -53,7 +54,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>ToDo App</Text>
+      <Header />
       <TextInput
         placeholder="add a new todo.."
         value={text}
@@ -83,12 +84,14 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#07113d',
     padding: 24,
   },
   textInput: {
     borderWidth: 1,
     padding: 8,
     marginBottom: 12,
+    borderColor: '#d3d2d6',
+    backgroundColor: '#fff',
   },
 });
